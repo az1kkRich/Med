@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <!-- Breadcrumbs-->
+        <section class="breadcrumbs-custom bg-image context-dark breadcrumbs-creative" style="background-image: url(/static/images/background-breadcrumbs-01-1920x345.jpg);" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+            <div class="container">
+                <h2 class="breadcrumbs-custom-title">Yangiliklar</h2>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="{% url 'index' %}">Uy</a></li>
+                    <li><a>Sahifalar</a></li>
+                    <li class="active">{{more.name}}</li>
+                </ul>
+            </div>
+        </section>
+        <!-- team member section-->
+        <section class="section-lg section bg-default">
+            <div class="container">
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-10 col-lg-4">
+                        <!-- Member block type 5-->
+                
+                  
+
+                                
+                    </div>
+                </div>
+                        <div class="offset-top-34 text-md-left inset-lg-right-20">
+                            <hr class="text-subline">
+                            <div class="row justify-content-sm-center justify-content-md-start offset-top-24 row-certificates" data-lightgallery="group">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-lg-8 text-lg-left offset-top-60 offset-md-top-0">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div>Yunalish</div>
+                                <h5 class="font-weight-bold">{{more.ixtisosi}}</h5>
+                            </div>
+                            <div class="col-md-7 offset-top-41 offset-sm-top-0">
+                                <div>Narxi</div>
+                                <h5 class="font-weight-bold">{{more.summa}} so'm</h5>
+                            </div>
+                        </div>
+                        <div class="offset-top-66 text-left">
+                            <h6>{{more.name}}</h6>
+                            <hr class="text-subline">
+                            <div style="width: 400px;">
+                                <p>{{more.info}}</p>
+                            </div>
+                            
+                        </div>
+                        <div class="offset-top-66">
+                            <h6 class="text-left">skills</h6>
+                            <hr class="text-subline">
+                            <div class="offset-top-30">
+                                <!-- Linear progress bar-->
+                                <div class="progress-linear">
+                                    <div class="progress-header">
+                                        <h6 class="text-gray-dark pull-left">Dedication</h6>
+                                        <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">50</h6>
+                                    </div>
+                                    <div class="progress-bar-linear-wrap progress-linear-body">
+                                        <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
+                                    </div>
+                                </div>
+                                <div class="offset-top-60">
+                                    <!-- Linear progress bar-->
+                                    <div class="progress-linear">
+                                        <div class="progress-header">
+                                            <h6 class="text-gray-dark pull-left">problem Solving</h6>
+                                            <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">20</h6>
+                                        </div>
+                                        <div class="progress-bar-linear-wrap progress-linear-body">
+                                            <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offset-top-60">
+                                    <!-- Linear progress bar-->
+                                    <div class="progress-linear">
+                                        <div class="progress-header">
+                                            <h6 class="text-gray-dark pull-left">professionalism</h6>
+                                            <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">87</h6>
+                                        </div>
+                                        <div class="progress-bar-linear-wrap progress-linear-body">
+                                            <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offset-top-60">
+                                    <!-- Linear progress bar-->
+                                    <div class="progress-linear">
+                                        <div class="progress-header">
+                                            <h6 class="text-gray-dark pull-left">Decision-making</h6>
+                                            <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">37</h6>
+                                        </div>
+                                        <div class="progress-bar-linear-wrap progress-linear-body">
+                                            <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Uchirilga Modul-->
+        {% comment %} <section class="section-lg section bg-default-liac">
+            <div class="container">
+                <h3>Scott Riley’s Blog Posts</h3>
+                <div class="row justify-content-sm-center row-40">
+                    <div class="col-sm-10 col-md-8 col-lg-4">
+                        <!-- Post Modern-->
+                        <article class="post post-modern post-modern-classic">
+                            <!-- Post media-->
+                            <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-13-370x250.jpg" alt=""/></a>
+                            </div>
+                            <!-- Post content-->
+                            <div class="post-content text-left">
+                                <!-- Post Title-->
+                                <div class="post-title offset-top-8">
+                                    <h5 class="font-weight-bold"><a href="single-post.html">Reasons to Visit a Breast Specialist</a></h5>
+                                </div>
+                                <ul class="list-inline list-inline-dashed">
+                                    <li>June 21, 2021 at 8:12pm</li>
+                                    <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
+                                </ul>
+                                <!-- Post Body-->
+                                <div class="post-body">
+                                    <div class="offset-top-14">
+                                        <p>There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...</p>
+                                    </div>
+                                </div>
+                                <div class="tags group group-sm">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-10 col-md-8 col-lg-4">
+                        <!-- Post Modern-->
+                        <article class="post post-modern post-modern-classic">
+                            <!-- Post media-->
+                            <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-14-370x250.jpg" alt=""/></a>
+                            </div>
+                            <!-- Post content-->
+                            <div class="post-content text-left">
+                                <!-- Post Title-->
+                                <div class="post-title offset-top-8">
+                                    <h5 class="font-weight-bold"><a href="single-post.html">Picking the Right Diagnostic Services for Efficient Results</a></h5>
+                                </div>
+                                <ul class="list-inline list-inline-dashed">
+                                    <li>June 21, 2021 at 8:12pm</li>
+                                    <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
+                                </ul>
+                                <!-- Post Body-->
+                                <div class="post-body">
+                                    <div class="offset-top-14">
+                                        <p>There have been a lot of cases in which people were not provided with accurate reports that eventually affected their medical treatment. There is always...</p>
+                                    </div>
+                                </div>
+                                <div class="tags group group-sm">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-10 col-md-8 col-lg-4">
+                        <!-- Post Modern-->
+                        <article class="post post-modern post-modern-classic">
+                            <!-- Post media-->
+                            <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-15-370x250.jpg" alt=""/></a>
+                            </div>
+                            <!-- Post content-->
+                            <div class="post-content text-left">
+                                <!-- Post Title-->
+                                <div class="post-title offset-top-8">
+                                    <h5 class="font-weight-bold"><a href="single-post.html">Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians</a></h5>
+                                </div>
+                                <ul class="list-inline list-inline-dashed">
+                                    <li>June 21, 2021 at 8:12pm</li>
+                                    <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
+                                </ul>
+                                <!-- Post Body-->
+                                <div class="post-body">
+                                    <div class="offset-top-14">
+                                        <p>An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...</p>
+                                    </div>
+                                </div>
+                                <div class="tags group group-sm">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div><a class="btn btn-ellipse btn-primary offset-top-41 offset-md-top-60" href="blog-masonry.html">view all blog posts</a>
+            </div>
+        </section> {% endcomment %}
+        <!-- Page Footer-->
+        <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-accent context-dark footer-classic">
+            <div class="container">
+                <div class="row justify-content-md-center text-xl-left">
+                    <div class="col-md-8 col-lg-12">
+                        <div class="row justify-content-sm-center row-40">
+                            <div class="col-sm-10 col-lg-4 text-left order-lg-3 inset-lg-left-50">
+                                <h6>Newsletter</h6>
+                                <hr class="text-subline">
+                                <p class="text-white-70">Enter your email address to receive up-to-date news, new patient information and other useful stuff, delivered right to your inbox.</p>
+                                <form class="rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                                    <div class="form-wrap input-group input-group-custom input-group-sm no-wrap">
+                                        <label class="form-label" for="subscribe-form-email">Your e-mail...</label>
+                                        <input class="form-input mr-2" id="subscribe-form-email" type="email" name="email" data-constraints="@Email @Required">
+                                        <button class="btn btn-sm btn-darkest" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-10 text-sm-left col-lg-4 order-lg-2">
+                                <h6>contact us</h6>
+                                <hr class="text-subline">
+                                <div class="text-center text-xl-left">
+                                    <address class="contact-info d-md-inline-block text-left">
+                      <div class="p unit unit-spacing-xxs flex-row">
+                        <div class="unit-left"><span class="icon icon-xxs mdi mdi-phone text-white"></span></div>
+                        <div class="unit-body"><a class="text-white-70" href="tel:#">1-800-1234-567</a><span class="text-white-70">, </span><a class="text-white-70" href="tel:#">1-800-3214-321</a></div>
+                      </div>
+                      <div class="p unit flex-row unit-spacing-xxs">
+                        <div class="unit-left"><span class="icon icon-xxs mdi mdi-map-marker text-white"></span></div>
+                        <div class="unit-body"><a class="text-white-70" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                      </div>
+                      <div class="p unit unit-spacing-xxs flex-row offset-top-16">
+                        <div class="unit-left"><span class="icon icon-xxs mdi mdi-email-outline text-white"></span></div>
+                        <div class="unit-body"><a class="text-white-70 text-java" href="mailto:#">info@demolink.org</a></div>
+                      </div>
+                    </address>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-lg-4 order-lg-1 text-center text-lg-left">
+                                <!--Brand--><a class="brand" href="{% url 'index' %}"><img class="brand-logo-dark" src="{% static 'images/logo-default-154x53.png' %}" alt="" width="77" height="26"/><img class="brand-logo-light" src="{% static 'images/logo-inverse-154x53.png' %}" alt="" width="77" height="26"/></a>
+                                <div class="offset-top-30">
+                                    <ul class="list-inline">
+                                        <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="#"></a></li>
+                                        <li><a class="icon fa fa-twitter icon-xxs icon-circle icon-white" href="#"></a></li>
+                                        <li><a class="icon fa fa-google-plus icon-xxs icon-circle icon-white" href="#"></a></li>
+                                        <li><a class="icon fa fa-rss icon-xxs icon-circle icon-white" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container offset-top-50 offset-md-top-60">
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Medina diagnostic center</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="{% static 'js/core.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock content %}
+       

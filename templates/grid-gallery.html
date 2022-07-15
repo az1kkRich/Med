@@ -1,0 +1,144 @@
+
+
+        {% extends 'base.html' %}
+        {% load static %}
+       {% block content %}
+       
+        <!-- Breadcrumbs-->
+        <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(/static/images/background-breadcrumbs-01-1920x345.jpg);" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+            <div class="container">
+                <h2 class="breadcrumbs-custom-title">Galleriya</h2>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="{% url 'index' %}">Uy</a></li>
+                    <li class="active">Galleriya</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Portfolio Grid 3 columns-->
+        <section class="section section-lg bg-default">
+            <div class="container">
+                <div class="isotope-wrap">
+                    <div class="row">
+                        <!-- Isotope Filters-->
+                        <div class="col-lg-12">
+                            <div class="isotope-filters isotope-filters-horizontal">
+                                <ul class="list-inline list-inline-sm">
+                                    <li class="d-xl-none">
+                                        <p>Choose your category:</p>
+                                    </li>
+                                    <li class="section-relative">
+                                        <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="isotope-1" data-custom-toggle-disable-on-blur="true">Filter<span class="caret"></span></button>
+                                        <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
+                                            <li><a class="active" data-isotope-filter="*" data-isotope-group="gallery" href="#">Hammasi</a></li>
+                                            <li><a data-isotope-filter="Health Care" data-isotope-group="gallery" href="#">Sog'lomlashtirish</a></li>
+                                            <li><a data-isotope-filter="Diagnostics" data-isotope-group="gallery" href="#">Diagnostika</a></li>
+                                            <li><a data-isotope-filter="Team" data-isotope-group="gallery" href="#">Jamoa</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Isotope Content-->
+                        <div class="col-lg-12 offset-top-34">
+                            <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-column-class=".col-1">
+                                <div class="row row-30" data-lightgallery="group">
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Health Care">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-01_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-01-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">Quality Health Care</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Team">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-02_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-02-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">Experienced Diagnosticians</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Diagnostics">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-03_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-03-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">individual Consultations</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Diagnostics">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-04_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-04-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">Constant Improvement</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Diagnostics">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-05_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-05-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">ultrasound diagnostics</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Health Care">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-06_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-06-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">unrivaled Expertise</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Health Care">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-07_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-07-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">Dental Laboratory</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Health Care">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-08_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-08-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">Family Health Services</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Health Care">
+                                        <a class="thumbnail-custom" data-lightgallery="item" href="images/gallery/originals/gallery-09_original.jpg">
+                                            <figure><img width="370" height="240" src="{% static 'images/gallery/gallery-09-370x240.jpg' %}" alt="">
+                                                <figcaption class="thumbnail-custom-caption text-center">
+                                                    <h6 class="thumbnail-custom-title text-white">Best Equipment</h6>
+                                                    <hr class="divider divider-xs bg-default">
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+       {% endblock content %}
+        

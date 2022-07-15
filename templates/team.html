@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(/static/images/background-breadcrumbs-01-1920x345.jpg);" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <div class="container">
+        <h2 class="breadcrumbs-custom-title">Jamoa</h2>
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="active">Team</li>
+        </ul>
+    </div>
+</section>
+<section class="section-lg section bg-default">
+    <div class="container">
+        <h3 class="text-center">Bizning Jamoa</h3> 
+        <div class="offset-top-41 offset-lg-top-60">
+            <div class="row justify-content-sm-center">
+                <div class="col-sm-8 col-md-7 col-lg-3">
+                    <!-- Thumbnail Josip-->
+                    {% comment %} {% for mem1 in Member %}
+                    <figure class="thumbnail-josip odd"><a href="{% url 'member_detail' mem1.pk %}"><img width="270" height="270" src="{{mem1.img.url}}" alt=""/></a>
+                        <div class="thumbnail-desc">
+                            <h5 class="thumbnail-josip-title text-medium text-white">{{mem.name}}</h5>
+                            <p class="d-none d-lg-block font-italic text-white offset-top-0">{{mem.info}}</p>
+                        </div>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-left btn-white" href="{% url 'member_detail' mem1.pk %}">view full profile</a></figcaption>
+                    </figure>   
+                    {% endfor %} {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-md p-xl-0">
+    <div class="container-fluid">
+        <h3 class="text-center">Full-width Layout</h3>
+        <div class="justify-content-sm-center row-30 row">
+            <!-- Thumbnail Josip-->
+            {% for mem1 in Member %}
+                <figure class="thumbnail-josip thumbnail-big"><a href="{% url 'member_detail' mem1.pk %}"><img width="384" height="410" src="{{ mem1.img.url }}" alt=""/></a>
+                    <div class="thumbnail-desc">
+                        <h5 class="thumbnail-josip-title text-medium text-white">{{mem1.name}}</h5>
+                        <p class="d-none d-lg-block font-italic text-white offset-top-0">{{mem1.info}}</p>
+                    </div>
+                    <figcaption><a class="btn btn-block btn-rect text-center text-lg-left btn-white" href="{% url 'member_detail' mem1.pk %}">view full profile</a></figcaption>
+                </figure>
+            {% endfor %}
+           
+            
+        </div>
+    </div>
+</section>
+<section class="section section-lg bg-default">
+    <div class="container">
+         {% comment %}      <h3 class="text-center">3 Column Layout</h3>
+        <hr class="divider divider-lg bg-java">
+       <div class="row justify-content-sm-center text-left row-30">
+            {% for mem1 in Member %}
+            <div class="col-sm-8 col-lg-4 inset-lg-right-30">
+                <div class="unit flex-xxl-row flex-xl-row flex-lg-column flex-md-row flex-sm-row unit-spacing-sm">
+                   
+                    <div class="unit-left"><img class="img-responsive" src="{{mem1.img.url}}" width="110" height="110" alt="" />
+                    </div>
+                    
+                    <div class="unit-body">
+                        <h5 class="font-weight-bold text-primary">Dr. Scott Riley</h5>
+                        <p class="font-italic offset-top-0">Chief Medical Officer, Founder</p>
+                        <div class="p unit unit-spacing-xxs flex-row">
+                            <div class="unit-left"><span class="icon icon-xs mdi mdi-phone text-primary"></span></div>
+                            <div class="unit-body"><a class="h6" href="tel:#">1-800-1234-567</a></div>
+                        </div>
+                    </div>
+                </div>
+                <p>Morbi luctus, lorem ut molestie mattis, arcu nisl hendrerit mi, ac ultrices odio arcu a sapien. Morbi a massa blandit.</p>
+            </div>
+            {% endfor %}
+           
+        </div> {% endcomment %}
+    </div>
+</section>
+{% endblock content %}
